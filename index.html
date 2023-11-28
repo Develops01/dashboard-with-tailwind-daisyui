@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html style="direction: rtl" lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -14,7 +18,14 @@
           class="absolute sm:relative z-20 sm:pt-0 pt-14 mobile-menu hidden h-screen sm:h-full menu flex-nowrap sm:flex flex-col bg-base-200 md:w-56"
         >
           <li>
-            <a class="hidden sm:flex btn btn-ghost text-xl mt-5">ARAD🦉</a>
+            <a class="hidden sm:flex btn btn-ghost text-xl my-10"
+              >دانشگاه آراد<img
+                alt="آراد برندینگ"
+                class="w-10 h-10"
+                src="https://aradbranding.com/en/uploads/settings/16688039641546.png"
+                width="60"
+                height="60"
+            /></a>
           </li>
           <li class="pt-5">
             <a>
@@ -32,7 +43,7 @@
                   d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                 />
               </svg>
-              Dashboard
+              پیشخوان
             </a>
           </li>
           <li>
@@ -51,7 +62,7 @@
                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              Info
+              نظرات
             </a>
           </li>
           <li>
@@ -70,36 +81,22 @@
                   d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
                 />
               </svg>
-              Statics
-            </a>
+              پرسش و پاسخ</a
+            >
           </li>
 
           <li>
-            <a>Solutions</a>
+            <a>آزمون ها</a>
             <ul>
-              <li><a>Design</a></li>
-              <li><a>Development</a></li>
-              <li><a>Hosting</a></li>
-              <li><a>Domain register</a></li>
+              <li><a>افزودن آزمون</a></li>
+              <li><a>لیست آزمون</a></li>
             </ul>
           </li>
           <li>
-            <a>Enterprise</a>
+            <a>کاربران</a>
             <ul>
-              <li><a>CRM software</a></li>
-              <li><a>Marketing management</a></li>
-              <li><a>Security</a></li>
-              <li><a>Consulting</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <a>Company</a>
-            <ul>
-              <li><a>About us</a></li>
-              <li><a>Contact us</a></li>
-              <li><a>Privacy policy</a></li>
-              <li><a>Press kit</a></li>
+              <li><a>افزودن کاربر</a></li>
+              <li><a>لیست کاربران</a></li>
             </ul>
           </li>
         </ul>
@@ -107,7 +104,7 @@
       <!-- nav right -->
       <div class="w-full flex flex-col items-center">
         <div class="w-full flex justify-end navbar bg-base-100">
-          <div class="w-full flex justify-end gap-2">
+          <div class="w-full flex justify-between gap-2">
             <!--<<< mobile nav -->
             <div class="z-20 max-w-full py-2 justify-center sm:hidden flex">
               <label class="btn btn-ghost swap swap-rotate">
@@ -142,7 +139,7 @@
               </label>
             </div>
             <!--  mobile nav >>> -->
-            <div class="md:mx-10 sm:w-full form-control">
+            <div class="md:mx-10 w-full form-control">
               <input
                 type="text"
                 placeholder="Search"
@@ -199,12 +196,12 @@
               >
                 <li>
                   <a class="justify-between">
-                    Profile
-                    <span class="badge">New</span>
+                    پروفایل
+                    <span class="badge">جدید</span>
                   </a>
                 </li>
-                <li><a>Settings</a></li>
-                <li><a>Logout</a></li>
+                <li><a>تنظیمات</a></li>
+                <li><a>خروج از حساب کاربری</a></li>
               </ul>
             </div>
           </div>
@@ -227,9 +224,9 @@
                 ></path>
               </svg>
             </div>
-            <div class="stat-title">Total Likes</div>
+            <div class="stat-title">مجموع پسند ها</div>
             <div class="stat-value">25.6K</div>
-            <div class="stat-desc">21% more than last month</div>
+            <div class="stat-desc">21% :بیشر از ماه گزشته</div>
           </div>
 
           <div class="stat">
@@ -248,9 +245,9 @@
                 ></path>
               </svg>
             </div>
-            <div class="stat-title">Page Views</div>
+            <div class="stat-title">تعداد بازدید ها</div>
             <div class="stat-value">2.6M</div>
-            <div class="stat-desc">21% more than last month</div>
+            <div class="stat-desc">21% :بیشتر از ماه گزشته</div>
           </div>
 
           <div class="stat">
@@ -269,7 +266,7 @@
                 ></path>
               </svg>
             </div>
-            <div class="stat-title">New Users</div>
+            <div class="stat-title">کاربران جدید</div>
             <div class="stat-value">4,200</div>
             <div class="stat-desc">↗︎ 400 (22%)</div>
           </div>
@@ -290,7 +287,7 @@
                 ></path>
               </svg>
             </div>
-            <div class="stat-title">New Registers</div>
+            <div class="stat-title">ثبت نام های جدید</div>
             <div class="stat-value">1,200</div>
             <div class="stat-desc">↘︎ 90 (14%)</div>
           </div>
@@ -308,12 +305,12 @@
                     <input type="checkbox" class="checkbox" />
                   </label>
                 </th>
-                <th>Name</th>
-                <th>Job</th>
-                <th>Favorite Color</th>
-                <th>date</th>
+                <th class="flex">نام کاربری</th>
+                <th>پست الکترونیکی</th>
+                <th>شماره تماس</th>
+                <th>تاریخ ورود</th>
                 <th>
-                  <button class="btn btn-outline btn-xs">Add</button>
+                  <button class="btn btn-outline btn-xs">افزودن کاربر</button>
                 </th>
               </tr>
             </thead>
@@ -336,8 +333,8 @@
                       </div>
                     </div>
                     <div>
-                      <div class="font-bold">Hart Hagerty</div>
-                      <div class="text-sm opacity-50">United States</div>
+                      <div class="font-bold">استاد خیابانی</div>
+                      <div class="text-sm opacity-50">ایران</div>
                     </div>
                   </div>
                 </td>
@@ -351,7 +348,18 @@
                 <td>Purple</td>
                 <td>1402/2/14</td>
                 <th>
-                  <button class="btn btn-ghost btn-xs">details</button>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-trash fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-edit fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-eye fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-note-sticky fa-solid"></i
+                  ></a>
                 </th>
               </tr>
               <!-- row 2 -->
@@ -385,7 +393,18 @@
                 <td>Red</td>
                 <td>1402/2/14</td>
                 <th>
-                  <button class="btn btn-ghost btn-xs">details</button>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-trash fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-edit fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-eye fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-note-sticky fa-solid"></i
+                  ></a>
                 </th>
               </tr>
               <!-- row 3 -->
@@ -421,7 +440,18 @@
                 <td>Crimson</td>
                 <td>1402/2/14</td>
                 <th>
-                  <button class="btn btn-ghost btn-xs">details</button>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-trash fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-edit fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-eye fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-note-sticky fa-solid"></i
+                  ></a>
                 </th>
               </tr>
               <!-- row 4 -->
@@ -457,7 +487,18 @@
                 <td>Indigo</td>
                 <td>1402/2/14</td>
                 <th>
-                  <button class="btn btn-ghost btn-xs">details</button>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-trash fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-edit fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-eye fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-note-sticky fa-solid"></i
+                  ></a>
                 </th>
               </tr>
               <tr>
@@ -492,7 +533,18 @@
                 <td>Indigo</td>
                 <td>1402/2/14</td>
                 <th>
-                  <button class="btn btn-ghost btn-xs">details</button>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-trash fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-edit fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-eye fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-note-sticky fa-solid"></i
+                  ></a>
                 </th>
               </tr>
               <tr>
@@ -527,7 +579,18 @@
                 <td>Indigo</td>
                 <td>1402/2/14</td>
                 <th>
-                  <button class="btn btn-ghost btn-xs">details</button>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-trash fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-edit fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-eye fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-note-sticky fa-solid"></i
+                  ></a>
                 </th>
               </tr>
               <tr>
@@ -562,7 +625,18 @@
                 <td>Indigo</td>
                 <td>1402/2/14</td>
                 <th>
-                  <button class="btn btn-ghost btn-xs">details</button>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-trash fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-edit fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-eye fa-solid"></i
+                  ></a>
+                  <a class="btn btn-ghost btn-xs"
+                    ><i class="fa-note-sticky fa-solid"></i
+                  ></a>
                 </th>
               </tr>
             </tbody>
@@ -570,10 +644,10 @@
             <tfoot>
               <tr>
                 <th></th>
-                <th>Name</th>
-                <th>Job</th>
-                <th>Favorite Color</th>
-                <th>date</th>
+                <th class="flex">نام کاربری</th>
+                <th>پست الکترونیکی</th>
+                <th>شماره تماس</th>
+                <th>تاریخ ورود</th>
 
                 <th></th>
               </tr>
@@ -595,27 +669,30 @@
                 d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"
               ></path>
             </svg>
-            <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+            <p style="font-size: large; line-height: 1.7rem">
+              شرکت تجاری اراد برندینگ با مسئولیت محدود<br />از سال 1990 تجارتی
+              پر سود و مورد اطمینان ارايه می دهد
+            </p>
           </aside>
           <nav>
-            <header class="footer-title">Services</header>
-            <a class="link link-hover">Branding</a>
-            <a class="link link-hover">Design</a>
-            <a class="link link-hover">Marketing</a>
-            <a class="link link-hover">Advertisement</a>
+            <header class="footer-title">خدمات</header>
+            <a class="link link-hover">برندینگ</a>
+            <a class="link link-hover">طراحی</a>
+            <a class="link link-hover">بازار یابی</a>
+            <a class="link link-hover">تبلیغات</a>
           </nav>
           <nav>
-            <header class="footer-title">Company</header>
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Contact</a>
-            <a class="link link-hover">Jobs</a>
-            <a class="link link-hover">Press kit</a>
+            <header class="footer-title">کمپانی</header>
+            <a class="link link-hover">درباره ما</a>
+            <a class="link link-hover">ارتباط با ما</a>
+            <a class="link link-hover">مشاغل</a>
+            <a class="link link-hover">مطبوعات</a>
           </nav>
           <nav>
-            <header class="footer-title">Legal</header>
-            <a class="link link-hover">Terms of use</a>
-            <a class="link link-hover">Privacy policy</a>
-            <a class="link link-hover">Cookie policy</a>
+            <header class="footer-title">قوانین</header>
+            <a class="link link-hover">قوانین کاربری</a>
+            <a class="link link-hover">حفظ حریم خصوصی</a>
+            <a class="link link-hover">حفظ اطلاعات کاربر</a>
           </nav>
         </footer>
       </div>

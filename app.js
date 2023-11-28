@@ -1,3 +1,4 @@
+// dark mode for daisyUi custom html tag
 let darkmode = document.querySelector("[data-theme]");
 let val = darkmode.getAttribute("data-theme")
 let num = 1
