@@ -1,26 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Document</title>
   </head>
-  <body class="w-screen h-fit flex justify-center items-center">
-    <form class="w-1/2 h-fit flex flex-col form-control">
-      <label for="firstname">First name: </label>
-      <input type="text" name="firstname" required />
+  <body class="flex justify-center items-center">
+    <div
+      class="overflow-x-auto lg:w-4/5 w-11/12 p-10 my-10 shadow-primary-content shadow-xl rounded-lg h-fit flex flex-col"
+    >
+      <p class="text-center mb-5 border-b p-2 text-xl">ثبت مشخصات کاربر</p>
+      <label for="firstname">نام :</label>
+      <input
+        class="w-full input input-bordered md:w-auto mt-2"
+        type="text"
+        name="firstname"
+        required
+      />
       <br />
-      <label for="lastname">Last name: </label>
-      <input type="text" name="lastname" required />
+      <label for="lastname">نام خانوادگی :</label>
+      <input
+        class="w-full input input-bordered md:w-auto mt-2"
+        type="text"
+        name="lastname"
+        required
+      />
       <br />
-      <label for="email">email: </label>
-      <input type="email" name="email" required />
+      <label for="email">شماره تماس :</label>
+      <input
+        name="number"
+        class="w-full input input-bordered md:w-auto mt-2"
+        type="number"
+        required
+      />
+
       <br />
-      <label for="password">password: </label>
-      <input type="password" name="password" required />
+      <label for="email">پست الکترونیکی :</label>
+      <input
+        class="w-full input input-bordered md:w-auto mt-2"
+        type="email"
+        name="email"
+        required
+        autocomplete="off"
+      />
       <br />
-      <input type="submit" value="Login!" />
-    </form>
+      <div>
+        <label for="myInput">ثبت زبان ها و نقش ها :</label>
+        <div class="relative w-full rounded-lg">
+          <input
+            class="input input-bordered w-full mt-2"
+            placeholder="  ثبت با کلید ENTER"
+            type="text"
+            id="myInput"
+          />
+          <i class="fa fa-tags absolute top-1/2 left-3 -translate-y-1/2"></i>
+        </div>
+        <div class="tags"></div>
+      </div>
+      <br />
+      <label for="password">گزر واژه : </label>
+      <input
+        class="w-full input input-bordered md:w-auto mt-2"
+        type="password"
+        name="password"
+        required
+      />
+      <br />
+      <label for="confirm_password">تایید گزر واژه : </label>
+      <input
+        class="w-full input input-bordered md:w-auto mt-2"
+        type="password"
+        name="confirm_password"
+        required
+      />
+      <br />
+      <div class="form-control border rounded-xl p-4 lg:w-2/6 sm:w-6/12 my-2">
+        <p class="text-lg border-b pb-2 mb-4">دسترسی ها</p>
+        <label class="label cursor-pointer">
+          <span class="label-text">مدیریت آزمون</span>
+          <input
+            name="quiz management"
+            type="checkbox"
+            checked="checked"
+            class="checkbox"
+          />
+        </label>
+        <label class="label cursor-pointer">
+          <span class="label-text">مدیریت کاربران</span>
+          <input
+            name="user management"
+            type="checkbox"
+            checked="checked"
+            class="checkbox"
+          />
+        </label>
+      </div>
+      <br />
+      <div class="flex items-start justify-end">
+        <input
+          class="btn btn-outline btn-lg"
+          type="submit"
+          value="ذخیره اطلاعات"
+        />
+      </div>
+    </div>
+    <script src="tags.js"></script>
   </body>
 </html>
