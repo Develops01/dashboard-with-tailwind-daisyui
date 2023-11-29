@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="flex justify-center items-center">
+    <div
+      class="overflow-x-auto lg:w-4/5 w-11/12 p-10 my-10 shadow-primary-content shadow-xl rounded-lg h-fit flex flex-col"
+    >
+      <p class="text-center mb-5 border-b p-2 text-xl">افزودن آزمون جدید</p>
+      <div class="dropdown mt-3">
+        <div
+          tabindex="0"
+          role="button"
+          class="flex justify-between btn w-full m-1"
+        >
+          همه زبان ها
+          <svg
+            class="-mr-1 h-5 w-5 text-gray-400"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <ul
+          class="w-full dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box"
+        >
+          <li><a>فارسی</a></li>
+          <li><a>English</a></li>
+          <li><a>العربیه</a></li>
+        </ul>
+      </div>
+      <div class="dropdown w-full mt-3">
+        <div
+          tabindex="0"
+          role="button"
+          class="flex justify-between btn w-full m-1"
+        >
+          پیش زمینه های شرکت در آزمون
+          <svg
+            class="-mr-1 h-5 w-5 text-gray-400"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <ul
+          class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full"
+        >
+          <li><a> پایدارسازی روابط با بزرگان _ مهندس قربانی</a></li>
+          <li><a> خط قرمزهای یک تغییر با کیفیت _ استاد وحید</a></li>
+          <li><a>استوری و استاتوس افزایش فروش _ استاد تالیا</a></li>
+          <li><a> پایدارسازی روابط با بزرگان _ مهندس قربانی</a></li>
+          <li><a> خط قرمزهای یک تغییر با کیفیت _ استاد وحید</a></li>
+          <li><a>استوری و استاتوس افزایش فروش _ استاد تالیا</a></li>
+          <li><a> پایدارسازی روابط با بزرگان _ مهندس قربانی</a></li>
+          <li><a> خط قرمزهای یک تغییر با کیفیت _ استاد وحید</a></li>
+          <li><a>استوری و استاتوس افزایش فروش _ استاد تالیا</a></li>
+        </ul>
+      </div>
+
+      <div class="flex justify-around align-center mt-5 gap-2">
+        <div class="w-1/2">
+          <label for="test name">نام آزمون :</label>
+          <input
+            name="test name"
+            class="w-full input input-bordered mt-2"
+            type="text"
+            required
+          />
+        </div>
+        <br />
+        <div class="w-1/2">
+          <label for="video time">زمان ویدیو :</label>
+          <input
+            name="video time"
+            class="w-full input input-bordered mt-2"
+            type="text"
+            required
+          />
+        </div>
+      </div>
+      <div class="flex justify-around align-center mt-5 gap-2">
+        <div class="w-1/2">
+          <label for="upload video">پیوند ویدیو :</label>
+          <input
+            name="upload video"
+            class="file-input file-input-bordered w-full mt-2"
+            type="file"
+            required
+          />
+        </div>
+        <br />
+        <div class="w-1/2">
+          <label for="upload img">پیوند تصویر :</label>
+          <input
+            name="video img"
+            class="file-input file-input-bordered w-full mt-2"
+            type="file"
+            required
+          />
+        </div>
+      </div>
+      <div class="w-full mt-5">
+        <label for="namek">نامک :</label>
+        <input
+          name="namek"
+          class="w-full input input-bordered mt-2"
+          type="text"
+          required
+        />
+      </div>
+      <div class="w-full mt-5">
+        <textarea
+          placeholder="Bio"
+          class="textarea textarea-bordered textarea-lg w-full"
+        ></textarea>
+      </div>
+      <div class="w-full mt-5 flex flex-col justify-center items-center">
+        <div class="w-full flex justify-between items-center">
+          <p class="text-xl">پرسش ها</p>
+          <button class="btn btn-outline btn-md">افزودن پرسش</button>
+        </div>
+        <div class="w-full flex flex-col justify-center mt-5">
+          <label for="question">متن پرسش :</label>
+          <input
+            name="question"
+            class="w-full input input-bordered mt-2"
+            type="text"
+            required
+          />
+          <div class="w-full mt-5">
+            <label for="myInput">افزودن پاسخ :</label>
+            <div class="relative w-full rounded-lg">
+              <input
+                class="input input-bordered w-full mt-2"
+                placeholder="  ثبت با کلید ENTER"
+                type="text"
+                id="myInput"
+              />
+              <i
+                class="fa fa-tags absolute top-1/2 left-3 -translate-y-1/2"
+              ></i>
+            </div>
+            <div class="tags"></div>
+          </div>
+          <div class="flex justify-start mt-5 w-full">
+            <button class="btn btn-outline btn-lg px-10 text-center">
+              ذخیره
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="tags.js"></script>
+</html>
