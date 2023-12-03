@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="en" data-theme="dark">
+<html lang="en" dir="rtl" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -11,7 +11,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="flex relative h-screen">
+    <div class="flex relative">
       <!-- stand nav -->
       <div>
         <ul
@@ -19,7 +19,7 @@
         >
           <li>
             <a
-              href="index.html"
+              href="/index.html"
               class="hidden sm:flex btn btn-ghost text-xl my-10"
               >دانشگاه آراد<img
                 alt="آراد برندینگ"
@@ -30,17 +30,17 @@
             /></a>
           </li>
           <li class="pt-5">
-            <a href="index.html"><i class="fa-solid fa-home"></i> پیشخوان </a>
+            <a href="/index.html"><i class="fa-solid fa-home"></i> پیشخوان </a>
           </li>
           <li>
-            <a href="pages/comment.html">
+            <a href="comment.html">
               <i class="fa-solid fa-comment"></i>
 
               نظرات
             </a>
           </li>
           <li>
-            <a href="pages/questionList.html">
+            <a href="questionList.html">
               <i class="fa-solid fa-question"></i>
               پرسش و پاسخ</a
             >
@@ -51,8 +51,8 @@
               <summary>آزمون ها</summary>
 
               <ul>
-                <li><a href="pages/testMaker.html">افزودن آزمون</a></li>
-                <li><a href="pages/examList.html">لیست آزمون</a></li>
+                <li><a href="testMaker.html">افزودن آزمون</a></li>
+                <li><a href="examList.html">لیست آزمون</a></li>
               </ul>
             </details>
           </li>
@@ -61,11 +61,12 @@
               <summary>کاربران</summary>
 
               <ul>
-                <li><a href="pages/addUser.html">افزودن کاربر</a></li>
-                <li><a href="pages/userList.html">لیست کاربران</a></li>
+                <li><a href="addUser.html">افزودن کاربر</a></li>
+                <li><a href="userList.html">لیست کاربران</a></li>
               </ul>
             </details>
           </li>
+
           <li>
             <details close>
               <summary>پدر</summary>
@@ -171,7 +172,7 @@
                 <div class="md:w-20 w-10 rounded-full">
                   <img
                     alt="Tailwind CSS Navbar component"
-                    src="./photo_2023-11-25_10-25-13.jpg"
+                    src="/photo_2023-11-25_10-25-13.jpg"
                   />
                 </div>
               </label>
@@ -277,9 +278,253 @@
             <div class="stat-desc">↘︎ 90 (14%)</div>
           </div>
         </div>
+        <div
+          class="overflow-x-auto lg:w-4/5 w-11/12 p-10 my-10 shadow-primary-content shadow-xl rounded-lg h-fit flex flex-col"
+        >
+          <div class="flex items-center justify-between pb-4 border-b">
+            <p class="text-xl">لیست آزمون ها</p>
+            <button class="btn btn-outline">افزودن آزمون</button>
+          </div>
+          <div class="dropdown mt-3">
+            <div tabindex="0" role="button" class="btn m-1">
+              همه زبان ها
+              <svg
+                class="-mr-1 h-5 w-5 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <ul
+              class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>فارسی</a></li>
+              <li><a>English</a></li>
+              <li><a>العربیه</a></li>
+            </ul>
+          </div>
+          <div class="mt-3">
+            <table class="table">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th>عنوان</th>
+                  <th>زمان ویدیو</th>
+                  <th>زبان</th>
+                  <th>عملیات ها</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <div class="font-bold">
+                          خط قرمز های یک تغیر با کیفیت
+                        </div>
+                        <div class="text-sm opacity-50">استاد وحید</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md"
+                      >46 دقیقه</span
+                    >
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md">فارسی</span>
+                  </td>
+
+                  <td>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-trash fa-solid"></i
+                    ></a>
+
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-note-sticky fa-solid"></i
+                    ></a>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-edit fa-solid"></i
+                    ></a>
+                  </td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <div class="font-bold">مذاکرات غیر حضوری</div>
+                        <div class="text-sm opacity-50">استاد تالیا</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md"
+                      >72 دقیقه</span
+                    >
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md">فارسی</span>
+                  </td>
+
+                  <td>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-trash fa-solid"></i
+                    ></a>
+
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-note-sticky fa-solid"></i
+                    ></a>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-edit fa-solid"></i
+                    ></a>
+                  </td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <div class="font-bold">
+                          خط قرمز های یک تغیر با کیفیت
+                        </div>
+                        <div class="text-sm opacity-50">استاد وحید</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md"
+                      >46 دقیقه</span
+                    >
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md">فارسی</span>
+                  </td>
+
+                  <td>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-trash fa-solid"></i
+                    ></a>
+
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-note-sticky fa-solid"></i
+                    ></a>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-edit fa-solid"></i
+                    ></a>
+                  </td>
+                </tr>
+                <!-- row 4 -->
+                <tr>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <div class="font-bold">مذاکرات غیر حضوری</div>
+                        <div class="text-sm opacity-50">استاد تالیا</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md"
+                      >72 دقیقه</span
+                    >
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md">فارسی</span>
+                  </td>
+
+                  <td>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-trash fa-solid"></i
+                    ></a>
+
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-note-sticky fa-solid"></i
+                    ></a>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-edit fa-solid"></i
+                    ></a>
+                  </td>
+                </tr>
+                <!-- row 5 -->
+                <tr>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <div class="font-bold">
+                          خط قرمز های یک تغیر با کیفیت
+                        </div>
+                        <div class="text-sm opacity-50">استاد وحید</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md"
+                      >46 دقیقه</span
+                    >
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md">فارسی</span>
+                  </td>
+
+                  <td>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-trash fa-solid"></i
+                    ></a>
+
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-note-sticky fa-solid"></i
+                    ></a>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-edit fa-solid"></i
+                    ></a>
+                  </td>
+                </tr>
+                <!-- row 6 -->
+                <tr>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <div class="font-bold">مذاکرات غیر حضوری</div>
+                        <div class="text-sm opacity-50">استاد تالیا</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md"
+                      >72 دقیقه</span
+                    >
+                  </td>
+                  <td>
+                    <span class="h-fit badge badge-ghost badge-md">فارسی</span>
+                  </td>
+
+                  <td>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-trash fa-solid"></i
+                    ></a>
+
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-note-sticky fa-solid"></i
+                    ></a>
+                    <a class="btn btn-ghost btn-xs"
+                      ><i class="fa-edit fa-solid"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
-
     <footer class="footer p-10 bg-base-200 text-base-content">
       <aside>
         <svg
@@ -322,5 +567,5 @@
       </nav>
     </footer>
   </body>
-  <script src="js/app.js"></script>
+  <script src="/js/app.js"></script>
 </html>

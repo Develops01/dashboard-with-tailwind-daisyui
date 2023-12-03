@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <title>Document</title>
   </head>
+
   <body>
-    <div class="flex relative h-screen">
+    <div class="flex relative">
       <!-- stand nav -->
       <div>
         <ul
@@ -19,7 +20,7 @@
         >
           <li>
             <a
-              href="index.html"
+              href="/index.html"
               class="hidden sm:flex btn btn-ghost text-xl my-10"
               >دانشگاه آراد<img
                 alt="آراد برندینگ"
@@ -30,17 +31,17 @@
             /></a>
           </li>
           <li class="pt-5">
-            <a href="index.html"><i class="fa-solid fa-home"></i> پیشخوان </a>
+            <a href="/index.html"><i class="fa-solid fa-home"></i> پیشخوان </a>
           </li>
           <li>
-            <a href="pages/comment.html">
+            <a href="comment.html">
               <i class="fa-solid fa-comment"></i>
 
               نظرات
             </a>
           </li>
           <li>
-            <a href="pages/questionList.html">
+            <a href="questionList.html">
               <i class="fa-solid fa-question"></i>
               پرسش و پاسخ</a
             >
@@ -51,8 +52,8 @@
               <summary>آزمون ها</summary>
 
               <ul>
-                <li><a href="pages/testMaker.html">افزودن آزمون</a></li>
-                <li><a href="pages/examList.html">لیست آزمون</a></li>
+                <li><a href="testMaker.html">افزودن آزمون</a></li>
+                <li><a href="examList.html">لیست آزمون</a></li>
               </ul>
             </details>
           </li>
@@ -61,8 +62,8 @@
               <summary>کاربران</summary>
 
               <ul>
-                <li><a href="pages/addUser.html">افزودن کاربر</a></li>
-                <li><a href="pages/userList.html">لیست کاربران</a></li>
+                <li><a href="addUser.html">افزودن کاربر</a></li>
+                <li><a href="userList.html">لیست کاربران</a></li>
               </ul>
             </details>
           </li>
@@ -171,7 +172,7 @@
                 <div class="md:w-20 w-10 rounded-full">
                   <img
                     alt="Tailwind CSS Navbar component"
-                    src="./photo_2023-11-25_10-25-13.jpg"
+                    src="/photo_2023-11-25_10-25-13.jpg"
                   />
                 </div>
               </label>
@@ -277,9 +278,111 @@
             <div class="stat-desc">↘︎ 90 (14%)</div>
           </div>
         </div>
+        <!-- form -->
+        <div
+          class="overflow-x-auto lg:w-4/5 w-11/12 p-10 my-10 shadow-primary-content shadow-xl rounded-lg h-fit flex flex-col"
+        >
+          <p class="mb-5 border-b p-2 text-xl">ثبت مشخصات کاربر</p>
+          <label for="firstname">نام :</label>
+          <input
+            class="w-full input input-bordered md:w-auto mt-2"
+            type="text"
+            name="firstname"
+            required
+          />
+          <br />
+          <label for="lastname">نام خانوادگی :</label>
+          <input
+            class="w-full input input-bordered md:w-auto mt-2"
+            type="text"
+            name="lastname"
+            required
+          />
+          <br />
+          <label for="number">شماره تماس :</label>
+          <input
+            name="number"
+            class="w-full input input-bordered md:w-auto mt-2"
+            type="number"
+            required
+          />
+
+          <br />
+          <label for="email">پست الکترونیکی :</label>
+          <input
+            class="w-full input input-bordered md:w-auto mt-2"
+            type="email"
+            name="email"
+            required
+            autocomplete="off"
+          />
+          <br />
+          <div>
+            <label for="myInput">ثبت زبان ها و نقش ها :</label>
+            <div class="relative w-full rounded-lg">
+              <input
+                class="input input-bordered w-full mt-2"
+                placeholder="  ثبت با کلید ENTER"
+                type="text"
+                id="myInput"
+              />
+              <i
+                class="fa fa-tags absolute top-1/2 left-3 -translate-y-1/2"
+              ></i>
+            </div>
+            <div class="tags"></div>
+          </div>
+          <br />
+          <label for="password">گزر واژه : </label>
+          <input
+            class="w-full input input-bordered md:w-auto mt-2"
+            type="password"
+            name="password"
+            required
+          />
+          <br />
+          <label for="confirm_password">تایید گزر واژه : </label>
+          <input
+            class="w-full input input-bordered md:w-auto mt-2"
+            type="password"
+            name="confirm_password"
+            required
+          />
+          <br />
+          <div
+            class="form-control border rounded-xl p-4 lg:w-2/6 sm:w-6/12 my-2"
+          >
+            <p class="text-lg border-b pb-2 mb-4">دسترسی ها</p>
+            <label class="label cursor-pointer">
+              <span class="label-text">مدیریت آزمون</span>
+              <input
+                name="quiz management"
+                type="checkbox"
+                checked="checked"
+                class="checkbox"
+              />
+            </label>
+            <label class="label cursor-pointer">
+              <span class="label-text">مدیریت کاربران</span>
+              <input
+                name="user management"
+                type="checkbox"
+                checked="checked"
+                class="checkbox"
+              />
+            </label>
+          </div>
+          <br />
+          <div class="flex items-start justify-end">
+            <input
+              class="btn btn-outline btn-md"
+              type="submit"
+              value="ذخیره اطلاعات"
+            />
+          </div>
+        </div>
       </div>
     </div>
-
     <footer class="footer p-10 bg-base-200 text-base-content">
       <aside>
         <svg
@@ -322,5 +425,6 @@
       </nav>
     </footer>
   </body>
-  <script src="js/app.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/tags.js"></script>
 </html>
