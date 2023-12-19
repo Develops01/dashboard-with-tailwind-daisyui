@@ -282,19 +282,145 @@
  -->
         <div
           class="overflow-x-auto lg:w-4/5 w-11/12 p-10 my-10 shadow-primary-content shadow-xl rounded-lg h-fit flex flex-col"
-        ></div>
+        >
+          <p class="mb-5 border-b p-2 text-xl">افزودن بلاگ جدید</p>
+          <div class="gap-2 items-center justify-start flex">
+            <!--  -->
+            <div class="dropdown mt-3">
+              <div class="flex gap-3 flex-col justify-start items-start">
+                <label for="tagSelector">یک دسته بندی انتخاب کن:</label>
+                <select
+                  class="p-3 shadow bg-[#14191E] rounded-box w-fit"
+                  id="tagSelector"
+                >
+                  <option value="" disabled selected>انتخاب دسته بندی</option>
+                  <option value="شرکت">شرکت</option>
+                  <option value="برندینگ">برندینگ</option>
+                  <option value="تجارت">تجارت</option>
+                  <option value="موبایل">موبایل</option>
+                  <option value="ادمین">ادمین</option>
+                  <option value="بازار">بازار</option>
+                  <!-- Add more options as needed -->
+                </select>
+                <button class="btn btn-outline btn-md" onclick="addTag()">
+                  اضافه کردن دسته
+                </button>
+              </div>
+            </div>
+
+            <div class="tag-container flex flex-wrap" id="tagContainer">
+              <!-- Tags will be dynamically added here -->
+            </div>
+
+            <!--  -->
+          </div>
+          <div class="flex justify-around align-center mt-5 gap-2">
+            <div class="w-1/2">
+              <label for="test name">تیتر بلاگ :</label>
+              <input
+                name="test name"
+                class="w-full input input-bordered mt-2"
+                type="text"
+                required
+              />
+            </div>
+            <br />
+            <div class="w-1/2">
+              <label for="video time">زمان مطالعه :</label>
+              <input
+                name="video time"
+                class="w-full input input-bordered mt-2"
+                type="text"
+                required
+              />
+            </div>
+          </div>
+          <div class="flex flex-col justify-start items-start w-full mt-5">
+            <label for="summary">خلاصه متن:</label>
+            <textarea
+              for="summary"
+              placeholder="خلاصه متن"
+              class="textarea textarea-bordered textarea-lg w-full"
+            ></textarea>
+          </div>
+          <div class="flex justify-around align-center mt-5 gap-2">
+            <div class="w-1/2">
+              <label for="upload video">پیوند ویدیو :</label>
+              <input
+                name="upload video"
+                class="file-input file-input-bordered w-full mt-2"
+                type="file"
+                required
+              />
+            </div>
+            <br />
+            <div class="w-1/2">
+              <label for="upload img">پیوند تصویر :</label>
+              <input
+                name="video img"
+                class="file-input file-input-bordered w-full mt-2"
+                type="file"
+                required
+              />
+            </div>
+          </div>
+          <div class="w-full mt-5">
+            <label for="namek">نامک :</label>
+            <input
+              name="namek"
+              class="w-full input input-bordered mt-2"
+              type="text"
+              required
+            />
+          </div>
+          <div class="flex flex-col justify-start items-start w-full mt-5">
+            <label for="content">متن بلاگ:</label>
+            <textarea
+              for="content"
+              placeholder=" متن بلاگ"
+              class="textarea textarea-bordered textarea-lg w-full"
+            ></textarea>
+          </div>
+          <div class="w-full mt-5 flex flex-col justify-center items-center">
+            <div class="w-full flex justify-between items-center">
+              <p class="text-xl">پرسش ها</p>
+              <button class="btn btn-outline btn-md">افزودن پرسش</button>
+            </div>
+            <div class="w-full flex flex-col justify-center mt-5">
+              <label for="question">متن پرسش :</label>
+              <input
+                name="question"
+                class="w-full input input-bordered mt-2"
+                type="text"
+                required
+              />
+              <div class="w-full mt-5">
+                <label for="myInput">افزودن برچسب :</label>
+                <div class="relative w-full rounded-lg">
+                  <input
+                    class="input input-bordered w-full mt-2"
+                    placeholder="  ثبت با کلید ENTER"
+                    type="text"
+                    id="myInput"
+                  />
+                  <i
+                    class="fa fa-tags absolute top-1/2 left-3 -translate-y-1/2"
+                  ></i>
+                </div>
+                <div class="tags"></div>
+              </div>
+              <div class="flex justify-start mt-5 w-full">
+                <button class="btn btn-outline btn-md">ذخیره</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- 
 new content here
 -->
       </div>
     </div>
-    <!-- 
-  new content here
- -->
 
-    <!-- 
-  new content here
- -->
     <footer class="footer p-10 bg-base-200 text-base-content">
       <aside>
         <svg
@@ -338,4 +464,5 @@ new content here
     </footer>
   </body>
   <script src="/js/app.js"></script>
+  <script src="/js/multiTagSelector.js"></script>
 </html>
